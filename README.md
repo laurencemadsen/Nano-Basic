@@ -1,8 +1,27 @@
 # Nano-Basic
 
-This program was an assignment for a class which allowed me to showcase my in-depth knowledge of the Swift language and create a fun and interesting program. Since not all the code written is mine I've included below the assignment description and objective.
+This program was an assignment for a class which allowed me to showcase my in-depth knowledge of the Swift language and create a fun and interesting program. Since not all the code written is mine I've included below the assignment description and objective as well as instructions to build and run the tests.
 
-"Description
+## Building NanoBASIC and Running Programs
+You can run a source file through the NanoBASIC interpreter by first building NanoBASIC:
+
+swift build
+and then from the repository's main directory running
+
+.build/debug/NanoBASIC Examples/print1.bas
+Where Examples/print1.bas is replaced by the filename of your program. Some sample programs are included in the Examples directory of the repository. The examples that come with the repository should be left unchanged for the unit tests to work.
+
+## Testing NanoBASIC
+Before you try running the tests, you should first build NanoBASIC. From the main repository directory run:
+
+swift build
+Tests should be run from the command-line (they depend on the build directory), not Xcode and you can run NanoBASIC's unit tests by running
+
+swift test
+from the main directory of this repository."
+
+
+## Description
 
 Because describing even a simple programming language takes a lot of room, we have described the NanoBASIC language itself in a separate document available in the project GitHub repository called language_guide.md. Please read the language guide before beginning the project.
 
@@ -18,8 +37,8 @@ Interpreter.swift – The interpreter is responsible for processing the nodes th
 
 You'll note that the current tokenizer keeps track of the ranges of characters in the original source code that contained the token, as does the parser's nodes. This can be useful for debug purposes.
 
-Objective
+## Objective
 
 You are being provided a working Tokenizer. The file Tokenizer.swift should be complete. In addition, the file Nodes.swift is also complete. You are also being provided the rest of the interpreter partially working (Parser.swift, Interpreter.swift). Arithmetic expressions are working. Print statements are working along with comments and String literals. You are expected to make the rest of NanoBASIC work.
 
-Your final program should be able to interpret all of the provided NanoBASIC example programs in the Examples directory by passing all of the included functional tests. The provided source code already passes the first two tests (testPrint1() and testPrint2()). You may not modify any of the provided tests, but you may add additional tests if you would like.  We have clearly marked the functions that you need to fill-in with "YOU FILL IN HERE" comments.  There should not be any need to modify the rest of the source code, but you can add additional utility functions if you would like."
+Your final program should be able to interpret all of the provided NanoBASIC example programs in the Examples directory by passing all of the included functional tests. The provided source code already passes the first two tests (testPrint1() and testPrint2()). You may not modify any of the provided tests, but you may add additional tests if you would like.  We have clearly marked the functions that you need to fill-in with "YOU FILL IN HERE" comments.  There should not be any need to modify the rest of the source code, but you can add additional utility functions if you would like.
