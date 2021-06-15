@@ -1,6 +1,6 @@
 # Nano-Basic
 
-This program was an assignment for a class which allowed me to showcase my in-depth knowledge of the Swift language and create a fun and interesting program. Since not all the code written is mine I've included below the assignment description and objective as well as instructions to build and run the tests.
+This program was an assignment for a class which allowed me to showcase my in-depth knowledge of the Swift language and create a very small programming language which helps reinforce the knowledge for how interpreting, tokenizing, and parsing a programming language actually works. Since not all the code written is mine I've included below the assignment description and objective as well as instructions to build and run the tests.
 
 ## Building NanoBASIC and Running Programs
 You can run a source file through the NanoBASIC interpreter by first building NanoBASIC:
